@@ -1,0 +1,24 @@
+{
+  "name": "ASM-time",
+  "version": "1.0.0",
+  "description": "A react component that shows time for alya-smart-mirror",
+  "private": true,
+  "scripts": {
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "nwb": "0.20.x"
+  },
+  "author": "Bilal Al-Saeedi",
+  "license": "MIT",
+  "repository": "https://github.com/alronz/ASM-time"
+}
