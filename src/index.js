@@ -1,8 +1,9 @@
-import './index.css'
+import React, {Component} from 'react'
 
-import React from 'react'
-import {render} from 'react-dom'
-
-import App from './App'
-
-render(<App/>, document.querySelector('#app'))
+export default class extends Component {
+  render() {
+    return <div>
+      <h2>Welcome to React components</h2>
+    </div>
+  }
+}
