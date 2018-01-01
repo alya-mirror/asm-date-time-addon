@@ -1,6 +1,6 @@
 {
   "name": "asm-date-time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react component that shows date/time for alya-smart-mirror",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -8,7 +8,8 @@
     "css",
     "es",
     "lib",
-    "umd"
+    "umd",
+    "configs"
   ],
   "scripts": {
     "build": "nwb build-react-component",
@@ -34,6 +35,7 @@
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "alya-smart-mirror"
   ]
 }

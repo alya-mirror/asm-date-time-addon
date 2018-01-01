@@ -6,7 +6,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 import React, { Component } from 'react';
 import config from '../configs/config.defaults';
-import './style.css';
+import '../css/style.css';
 import moment from 'moment';
 
 var _default = function (_Component) {

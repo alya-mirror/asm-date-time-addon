@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import config from '../configs/config.defaults'
-import './style.css';
+import '../css/style.css';
 import moment from 'moment'
 
 export default class extends Component {
