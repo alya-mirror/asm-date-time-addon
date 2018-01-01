@@ -4,7 +4,7 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-A react component that shows time for [alya-smart-mirror](https://github.com/alronz/alya-smart-mirror).
+A react component that shows date/time for [alya-smart-mirror](https://github.com/alronz/alya-smart-mirror).
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo

@@ -1,7 +1,7 @@
 {
-  "name": "ASM-time",
+  "name": "ASM-date-time",
   "version": "0.0.1",
-  "description": "A react component that shows time for alya-smart-mirror",
+  "description": "A react component that shows date/time for alya-smart-mirror",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -18,7 +18,9 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.20.1"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
