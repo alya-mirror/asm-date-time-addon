@@ -1,7 +1,7 @@
 import React from 'react'
-import {render, unmountComponentAtNode} from 'react-dom'
+import {render} from 'react-dom'
 
-import Component from 'src/'
+import Component from './index'
 
 describe('Component', () => {
 
