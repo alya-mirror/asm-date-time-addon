@@ -1,14 +1,40 @@
 import React, {Component} from 'react'
 import moment from 'moment'
+import 'w3-css/w3.css';
+import io from 'socket.io-client';
 
 import config from './config.defaults.json';
+
 import ('./style.css');
 
 class ASMDateTime extends Component {
   constructor(props) {
     super(props);
     moment.locale(config.language);
-    this.state = {date: new moment()};
+    this.state = {
+      date: new moment(),
+      settings: {
+        position: "w3-display-topleft",
+      }
+    };
+
+    this.socket = io('http://localhost:3100');
+    this.socket.on('connect', function () {
+      console.log('connected');
+    });
+    this.socket.on('disconnect', function () {
+      console.log('disconnected');
+    });
+    this.socket.on('@alya-mirror/asm-date-time', function (data) {
+      const message = JSON.parse(data).data.addonSettings;
+
+      self.setState({
+        settings: {
+          position: message.position,
+        }
+      });
+
+    });
   }
 
   tick() {
@@ -29,9 +55,10 @@ class ASMDateTime extends Component {
   }
 
   render() {
+    let classNameVariable = `date grey ${this.state.settings.position}`;
     return (
-      <div>
-        <div className="date grey">
+      <div className={classNameVariable}>
+        <div>
           <span>{this.state.date.format('dddd')}</span>, <span>{this.state.date.format('LL')}</span>
         </div>
         <div className="time">{this.state.date.format('LT')}</div>
@@ -39,6 +66,5 @@ class ASMDateTime extends Component {
     )
   }
 }
-
 
 export default ASMDateTime;
