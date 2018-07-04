@@ -10,6 +10,7 @@ import ('./style.css');
 class ASMDateTime extends Component {
   constructor(props) {
     super(props);
+    let self = this;
     moment.locale(config.language);
     this.state = {
       date: new moment(),
