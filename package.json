@@ -1,6 +1,6 @@
 {
   "name": "@alya-mirror/asm-date-time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A react component that shows date/time for alya-smart-mirror",
   "engines": {
     "node": ">=6.0.0"
