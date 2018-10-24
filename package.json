@@ -16,6 +16,7 @@
     "clean": "nwb clean-module",
     "test": "react-scripts test --env=jsdom",
     "electron-start": "react-scripts start",
+    "publish": "npm publish --access public",
     "dev": "concurrently \"cross-env BROWSER=none yarn electron-start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "dependencies": {
@@ -25,7 +26,6 @@
     "moment": "^2.20.1",
     "node-notifier": "^5.1.2",
     "socket.io-client": "^2.1.1",
-    "w3-css": "^4.1.0"
   },
   "peerDependencies": {
     "react": "16.x"
